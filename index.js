@@ -20,9 +20,11 @@ app.get('/educacion', (req, res) => {
   })
 })
 
-app.get('/laboral', (req, res) => {
-  res.send('Pagina de experencia laboral')
+app.get('/conocimientos', (req, res) => {
+  res.render('conocimientos'
+  )
 })
+
 
 app.use((req, res, next) =>{
   res.status(404).sendfile(__dirname + '/public/404.html')
